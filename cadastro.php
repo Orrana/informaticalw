@@ -9,6 +9,17 @@
         <header>
                 <h1 id="cabecalho">Bem vindo a Informatica LW!</h1>
                 <hr>
+                <?php
+                    require_once 'conexao.php';
+                    $bdServidor = 'localhost';
+                    $bdUsuario = 'root';
+                    $bdSenha = '12345678';
+                    $bdDatabase = 'informaticalw';
+                    $bdPort = 3306;
+
+                    $cliente = new Conexao;
+                    $cliente->conection($bdServidor,$bdUsuario,$bdSenha,$bdDatabase,$bdPort);
+                ?>
         </header>
         <p><h3 style="text-align: center;">Cadastro de Usuário</h3></p>
         <div id="total">
