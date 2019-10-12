@@ -1,0 +1,72 @@
+#cabecalho{
+    text-align: center;
+}
+
+.box-login{
+    height: 250px;
+    width: 290px;
+    background-color:#AAA6A6;
+    margin: 143px auto 0px;
+    border-radius: 6px;
+}
+
+.interna-box-login{
+    background-color:blueviolet;
+    height: 230px;
+    width: 270px;
+    position: absolute;
+    margin: 10px 
+}
+
+#boton-logar{
+    position: relative;
+    margin: 0px 60px auto;
+    border-radius: 3px;
+    
+}
+
+.form-logar{
+    position: relative;
+    margin: 30px;
+}
+
+.cadastro-login{
+    position: absolute;
+    height: 100px;
+    width: 290px;
+    margin: 300px auto 0px;
+    border-radius: 5px;
+    background-color: #AAA6A6;
+}
+
+.cadastro-login-interno{
+    position: absolute;
+    background-color: blueviolet;
+    height: 80px;
+    width: 270px;
+    margin: 10px;
+}
+
+input[type=email]{
+    color: aliceblue;
+    border: none;
+    border-bottom: 2px solid cornsilk;
+    background-color: blueviolet;
+    box-shadow: none;
+    border-color: none;
+}
+
+input[type=password]{
+    color: aliceblue;
+    border: none;
+    border-bottom: 2px solid cornsilk;
+    background-color: blueviolet;
+    text-decoration: none;
+}
+
+ textarea:focus,input:focus,select:focus{
+    border-color: none !important;
+    outline: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none;
+}

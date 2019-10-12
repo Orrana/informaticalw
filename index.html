@@ -2,9 +2,29 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>Login - informaticaLW</title>
+        <title>Login - Banco LW </title>       
+        <link rel="stylesheet" href="_estilos-CSS/_estilos.css">
     </head>
     <body>
-        
+        <header>
+            <h1 id="cabecalho">Bem vindo ao Banco LW!</h1>
+            <hr>
+        </header>
+        <div class="box-login">
+            <div class="interna-box-login">
+            <form action="" onsubmit="if(!confirm('Confirmar login?')){return false;}" role="form" method="POST" class="form-logar">
+                <p style="color: azure">Email</p>
+                <p><input type="email" name="email" id="email" placeholder="Exemplo@servidor.com" autofocus required></p>
+                <p style="color: azure">Senha</p>
+                <p><input type="password" name="senha" id=""required></p>
+                <p><input type="submit" value="Logar" id="boton-logar" ></p>
+            </div>
+            </form>
+            <div class="cadastro-login"> 
+                <div class="cadastro-login-interno">
+                    <p style="text-align: center;"><h5><a href="" style="text-decoration: none; color: azure; margin: 40px;"> Clique aqui para cadastrar</a></h5></p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
