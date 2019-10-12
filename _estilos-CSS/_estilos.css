@@ -6,7 +6,7 @@
     height: 250px;
     width: 290px;
     background-color:#AAA6A6;
-    margin: 143px auto 0px;
+    margin: 120px auto 0px;
     border-radius: 6px;
 }
 
@@ -20,8 +20,11 @@
 
 #boton-logar{
     position: relative;
-    margin: 0px 60px auto;
+    margin: 0px 75px auto;
     border-radius: 3px;
+    border-color: darkmagenta;
+    color: cornsilk;
+    background-color: darkmagenta;
     
 }
 
@@ -32,7 +35,7 @@
 
 .cadastro-login{
     position: absolute;
-    height: 100px;
+    height: 130px;
     width: 290px;
     margin: 300px auto 0px;
     border-radius: 5px;
@@ -42,12 +45,21 @@
 .cadastro-login-interno{
     position: absolute;
     background-color: blueviolet;
-    height: 80px;
+    height: 110px;
     width: 270px;
     margin: 10px;
 }
 
-input[type=email]{
+/*input[type=email]{
+    color: aliceblue;
+    border: none;
+    border-bottom: 2px solid cornsilk;
+    background-color: blueviolet;
+    box-shadow: none;
+    border-color: none;
+}*/
+
+#email{
     color: aliceblue;
     border: none;
     border-bottom: 2px solid cornsilk;
@@ -55,8 +67,15 @@ input[type=email]{
     box-shadow: none;
     border-color: none;
 }
+/*input[type=password]{
+    color: aliceblue;
+    border: none;
+    border-bottom: 2px solid cornsilk;
+    background-color: blueviolet;
+    text-decoration: none;
+}*/
 
-input[type=password]{
+#senha{
     color: aliceblue;
     border: none;
     border-bottom: 2px solid cornsilk;
@@ -69,4 +88,66 @@ input[type=password]{
     outline: 0;
     -webkit-box-shadow: none !important;
     box-shadow: none;
+}
+
+/* Css's da Pagina Cadastro*/
+
+#total{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#N-cadastro{
+    text-align: center;
+    color: cornsilk;
+}
+
+div.box-cadastro{
+    width: 350px;
+    height: 510px;
+    background-color: #AAA6A6;
+    margin: 0px auto 0px;
+    border-radius: 5px;
+}
+
+div.box-cadastro-interno{
+    width: 330px;
+    height: 490px;
+    position: absolute;
+    margin: 10px;
+    background-color: blueviolet;
+}
+
+div.form-alinhamento{
+    
+    position: absolute;
+    height: 470px;
+    width: 325px;
+    margin: 5px;
+}
+
+.labels-cadastro{
+    color: cornsilk;
+}
+
+.input-cadastro{
+    /*border: none;
+    border-bottom: 2px solid cornsilk;
+    background-color: blueviolet;
+    width: 95%;
+    color: cornsilk;*/
+
+    width: 95%;
+    border-radius:5px;
+    padding: 2px;
+}
+
+#botao-cadastro{
+    position: relative;
+    margin: -10px 130px 0px;
+    border-radius: 2px;
+    background-color: darkmagenta;
+    border-color: darkmagenta;
+    color: cornsilk;
 }
