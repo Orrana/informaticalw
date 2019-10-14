@@ -2,16 +2,27 @@
     text-align: center;
 }
 
+#mensagem-bem-vindo{
+    background-color: black;
+    color:white;
+    padding: 20px;
+}
+
+::placeholder{
+    color: white;
+    opacity: 0.7;
+}
+
 .box-login{
     height: 250px;
     width: 290px;
-    background-color:#AAA6A6;
-    margin: 120px auto 0px;
+    background-color:navajowhite;
+    margin: 50px auto 0px;
     border-radius: 6px;
 }
 
 .interna-box-login{
-    background-color:blueviolet;
+    background-color:chocolate;
     height: 230px;
     width: 270px;
     position: absolute;
@@ -22,9 +33,9 @@
     position: relative;
     margin: 0px 75px auto;
     border-radius: 3px;
-    border-color: darkmagenta;
-    color: cornsilk;
-    background-color: darkmagenta;
+    border-color:navajowhite;
+    color: white;
+    background-color: chocolate;
     
 }
 
@@ -39,12 +50,12 @@
     width: 290px;
     margin: 300px auto 0px;
     border-radius: 5px;
-    background-color: #AAA6A6;
+    background-color:navajowhite;
 }
 
 .cadastro-login-interno{
     position: absolute;
-    background-color: blueviolet;
+    background-color: chocolate;
     height: 110px;
     width: 270px;
     margin: 10px;
@@ -63,7 +74,7 @@
     color: aliceblue;
     border: none;
     border-bottom: 2px solid cornsilk;
-    background-color: blueviolet;
+    background-color: chocolate;
     box-shadow: none;
     border-color: none;
 }
@@ -79,7 +90,7 @@
     color: aliceblue;
     border: none;
     border-bottom: 2px solid cornsilk;
-    background-color: blueviolet;
+    background-color: chocolate;
     text-decoration: none;
 }
 
@@ -151,3 +162,10 @@ div.form-alinhamento{
     border-color: darkmagenta;
     color: cornsilk;
 }
+
+#linha{
+    border-color: chocolate;
+}
+
+
+
