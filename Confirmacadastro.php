@@ -45,7 +45,7 @@
     
 
 ?>
-<form action="index.html" onsubmit="if(!confirm('Cadastrado Com sucesso')){return false;}"></form>
+
 </body>
 </html>
 
