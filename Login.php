@@ -26,7 +26,7 @@ echo $usuario['id_cliente'];
 
 
 $_SESSION['senha'] = $senha;
-$_SESSION['usuario'] = $email;
+$_SESSION['email_cliente'] = $email;
 $_SESSION['id_cliente'] = $usuario['id_cliente'];
 $_SESSION['nome_cliente'] = $usuario['nome_cliente'];
 $_SESSION['telefone_cliente'] = $usuario['telefone_cliente'];

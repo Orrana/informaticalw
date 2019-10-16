@@ -23,7 +23,7 @@ session_start();
                 
                 ?>
                 <a href="index.html"><button class="btn btn-lg btn-primary btn-block">Logout</button></a>
-                <a href="restaurar.html" target="teste">
+                <a href="restaurar.php" target="teste">
                 <button class="btn btn-lg btn-primary btn-block" onclick="exibirIframe();">Configurações</button></a>
 
         
