@@ -1,8 +1,4 @@
-<?php
-session_start();
- 
-require_once 'conexao.php';
-?>
+
 <!doctype html>
 <html>
     <head>
@@ -10,6 +6,7 @@ require_once 'conexao.php';
  
         <title>Painel | Informatica LW</title>
         <link rel="stylesheet" href="_estilos-CSS/estilosaplicacao.css">
+        <script src="main.js"></script>
     </head>
  
     <body>
@@ -24,14 +21,23 @@ require_once 'conexao.php';
                 
                 ?>
                 <a href="index.html"><button class="btn btn-lg btn-primary btn-block">Logout</button></a>
-                
-                <button class="btn btn-lg btn-primary btn-block">Configurações</button></p></div>
+                <a href="restaurar.html" target="teste">
+                <button class="btn btn-lg btn-primary btn-block" onclick="exibirIframe();">Configurações</button></a>
+
+        
+                </div>
         <div id="header">
             <button class="btn btn-lg btn-primary btn-block">Histórico de compras</button>
             
         </div>
-        <div id="conteudo-left"></div>
-        <div id="pasta"></div>
+        <div id="conteudo-left" ></div>
+        <div id="pasta">
+            <iframe id='Iframe' src="restaurar.html" height="700" width="100%"
+            name="teste"></iframe>
+            
+
+            
+        </div>
         <div id="resto"></div>
     </body>
 </html>

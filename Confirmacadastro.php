@@ -10,7 +10,7 @@
     require_once 'conexaoDAO.php';
     $bdServidor = 'localhost';
     $bdUsuario = 'root';
-    $bdSenha = '1234';
+    $bdSenha = '12345678';
     $bdDatabase = 'informaticalw';
     $bdPort = 3306; 
     /**/

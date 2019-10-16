@@ -8,15 +8,18 @@
 #conteudo-left{
     width: 20%; 
     height:900px;
-    background-color:yellow;
+    background-color:#A9A9A9;
     float: left;
+    border: 3px solid #000;
 }
 
 #pasta{
-    width: 80%;
-    height:750px;
-    background-color:tomato;
+    width: 79%;
+    height:900px;
+    background-color:blueviolet;
     float: right;
+    position: static;
+    border: 3px solid #000;
 }
 
 #resto{
@@ -33,4 +36,7 @@
 
 #inicial{
     text-align: center;
+}
+#Iframe{
+    display: none;
 }
