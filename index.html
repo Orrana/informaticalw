@@ -13,9 +13,9 @@
         </header>
         <div class="box-login">
             <div class="interna-box-login">
-            <form action="aplicacao.php" onsubmit="if(!confirm('Confirmar login?')){return false;}" role="form" method="POST" class="form-logar">
+            <form action="Login.php" onsubmit="if(!confirm('Confirmar login?')){return false;}" role="form" method="POST" class="form-logar">
                 <p style="color: azure">Email</p>
-                <p><input type="email" name="email" id="email" placeholder="Exemplo@servidor.com" autofocus required></p>
+                <input type="email" name="email" id="email" placeholder="Exemplo@servidor.com" autofocus required>
                 <p style="color: azure">Senha</p>
                 <p><input type="password" name="senha" id="senha"required></p>
                 <p><input type="submit" value="Logar" id="boton-logar" ></p>
@@ -29,6 +29,8 @@
                     <p style="text-align: center;"><h5><a href="cadastro.php" style="text-decoration: none; color: azure; margin: 55px;"> Clique aqui para cadastrar</a></h5></p>
                 </div>
             </div>
+
+            
         </div>
     </body>
 </html>

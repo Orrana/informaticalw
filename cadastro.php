@@ -6,9 +6,9 @@
         <link rel="stylesheet" href="_estilos-CSS/_estilos.css">
     </head>
     <body>
-        <header>
+        <header id='mensagem-bem-vindo1'>
                 <h1 id="cabecalho">Bem vindo a Informatica LW!</h1>
-                <hr>
+                <hr id='linha1'>
                
         </header>
         <p><h3 style="text-align: center;">Cadastro de Usuário</h3></p>
