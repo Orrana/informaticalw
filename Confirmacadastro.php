@@ -8,11 +8,7 @@
 <body>
     <?php
     require_once 'conexaoDAO.php';
-    $bdServidor = 'localhost';
-    $bdUsuario = 'root';
-    $bdSenha = '1234';
-    $bdDatabase = 'informaticalw';
-    $bdPort = 3306; 
+    
     /**/
     $nome = $_POST['nome'];
     $email = $_POST['email'];
@@ -26,8 +22,10 @@
       
     $cliente = new Conexao;
 
+    $teste = $cliente->conection();
+
     if (strcmp($senha,$confir_senha)==0) {
-        $cliente->cadastro($nome,$email,$senha,$tel,$endereco,$bdServidor,$bdUsuario,$bdSenha,$bdDatabase,$bdPort);
+        $cliente->cadastro($nome,$email,$senha,$tel,$endereco,$teste);
         echo "<script> if (!confirm('Cadastrado com sucesso!')) {
             location.href='index.html';
         }else{
@@ -35,7 +33,7 @@
         } </script>";
 
     }else{
-        echo "<script>if(!confirm('Senhas diferentes')) {
+        echo "<script>if(!confirm('Senhas não são identicas')) {
             location.href='cadastro.php';
         }
         else{
