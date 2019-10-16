@@ -34,7 +34,7 @@ session_start();
         </div>
         <div id="conteudo-left" ></div>
         <div id="pasta">
-            <iframe id='Iframe' src="restaurar.html" height="700" width="100%"
+            <iframe id='Iframe' src="restaurar.php" height="700" width="100%"
             name="teste"></iframe>
             
 

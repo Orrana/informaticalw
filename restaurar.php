@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,9 +18,9 @@
             <div class="box-cadastro">
                 <div class="box-cadastro-interno">
                     <div class="form-alinhamento">
-                        <form action="" method="POST" onsubmit="if(!confirm('Deseja confirmar o cadastro')){return false;}" role="form">
+                        <form action="" method="POST" onsubmit="if(!confirm('Deseja confirmar o cadastro')){return false;}">
                             <p class="labels-cadastro">Nome completo*:</p>
-                            <p><input type="text" name="nome" required autofocus class="input-cadastro" value="Teste"></p>
+                            <p><input type="text"  value="<?php echo $_SESSION['nome'];?>" name="nome" class="input-cadastro" ></p>
                             <p class="labels-cadastro">E-mail*:</p>
                             <p><input type="email" name="email" required class="input-cadastro"></p>
                             <p class="labels-cadastro">Senha*:</p>
