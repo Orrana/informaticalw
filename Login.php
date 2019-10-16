@@ -30,7 +30,7 @@ $_SESSION['usuario'] = $email;
 $_SESSION['id_cliente'] = $usuario['id_cliente'];
 $_SESSION['nome_cliente'] = $usuario['nome_cliente'];
 $_SESSION['telefone_cliente'] = $usuario['telefone_cliente'];
-$_SESSION['endereco_cliente'] = $usuario['endereco_telefone'];
+$_SESSION['endereco_cliente'] = $usuario['endereco_cliente'];
 
-//header('Location: aplicacao.php');
+header('Location: aplicacao.php');
 ?>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html>
     <head>
@@ -15,8 +19,7 @@
         <h1 id="inicial">BEM VINDO À INFORMÁTICA LW</h1>
         <p id="linha-config">
                 <?php 
-                     $nomeusuario=$_POST['email'];
-                        echo "{$nomeusuario} seja bem vindo(a)!";
+                        echo  $_SESSION['nome_cliente']." seja bem vindo(a)!";
                 
                 ?>
                 <a href="index.html"><button class="btn btn-lg btn-primary btn-block">Logout</button></a>

@@ -8,15 +8,7 @@
 <body>
     <?php
     require_once 'conexaoDAO.php';
-<<<<<<< HEAD
     
-=======
-    $bdServidor = 'localhost';
-    $bdUsuario = 'root';
-    $bdSenha = '12345678';
-    $bdDatabase = 'informaticalw';
-    $bdPort = 3306; 
->>>>>>> 9c64b6d6072a4df8cb11db4782f47cb528fad82d
     /**/
     $nome = $_POST['nome'];
     $email = $_POST['email'];

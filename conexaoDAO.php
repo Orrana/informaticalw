@@ -33,12 +33,12 @@
             $sql = "select id_cliente,nome_cliente,telefone_cliente,endereco_cliente from c_clientes where email_cliente=:email and senha_cliente=:senha";
             $stm = $conexao->prepare($sql);
             $stm->bindParam(":email",$email);
-            $stm->bindParam(":senha",$senha);
+            $stm->bindParam(":senha",$senha1);
             $stm->execute();
             $users = $stm->fetchAll(PDO::FETCH_ASSOC);    
-            
-            if (count($users)<0) {
-                echo "<script> if(!confirm('Senha ou Email incorretos')){
+            $user = [];
+            if (count($users)<=0) {
+                echo "<script> if(!confirm('Senha ou Email incorreto')){
                     location.href='index.html';
                 }else{
                     location.href='index.html';
