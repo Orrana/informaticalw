@@ -7,7 +7,7 @@
         function conection(){
             $MYSQL_HOST='localhost';
             $MYSQL_USER = 'root' ;
-            $MYSQL_PASSWORD = '1234';
+            $MYSQL_PASSWORD = '12345678';
             $MYSQL_DB_NAME = 'informaticalw';
             $PDO = new PDO('mysql:host=' . $MYSQL_HOST . ';dbname=' . $MYSQL_DB_NAME, $MYSQL_USER, $MYSQL_PASSWORD);
             return $PDO;

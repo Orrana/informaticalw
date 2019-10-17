@@ -27,7 +27,7 @@
                             <p><input type="password" name="confirsenha" id="" required class="input-cadastro"></p>
                             <p class="labels-cadastro">Telefone:</p>
                             <p><input type="tel" name="tel" id="" class="input-cadastro"></p>
-                            <p class="labels-cadastro"> Edereço:</p>
+                            <p class="labels-cadastro"> Endereço:</p>
                             <p><input type="text" name="endereco" id="" class="input-cadastro"></p>
                             <p><input type="submit" value="Cadastrar" id="botao-cadastro"></p>
                         </form>
