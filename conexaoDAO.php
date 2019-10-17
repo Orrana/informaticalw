@@ -5,10 +5,20 @@
         
 
         function conection(){
-            $MYSQL_HOST='localhost';
-            $MYSQL_USER = 'root' ;
-            $MYSQL_PASSWORD = '1234';
-            $MYSQL_DB_NAME = 'informaticalw';
+            $congif = file('config.txt');
+            
+            $vetor_config =[];
+
+            foreach ($congif as $line){
+                $line = trim($line);
+                $vetor_config = explode(',',$line);
+                
+            }
+
+            $MYSQL_HOST=$vetor_config[0];
+            $MYSQL_USER =$vetor_config[1];
+            $MYSQL_PASSWORD =$vetor_config[2];
+            $MYSQL_DB_NAME = $vetor_config[3];
             $PDO = new PDO('mysql:host=' . $MYSQL_HOST . ';dbname=' . $MYSQL_DB_NAME, $MYSQL_USER, $MYSQL_PASSWORD);
             return $PDO;
         }
