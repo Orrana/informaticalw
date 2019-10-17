@@ -5,6 +5,7 @@
         
 
         function conection(){
+<<<<<<< HEAD
             $congif = file('config.txt');
             
             $vetor_config =[];
@@ -19,6 +20,12 @@
             $MYSQL_USER =$vetor_config[1];
             $MYSQL_PASSWORD =$vetor_config[2];
             $MYSQL_DB_NAME = $vetor_config[3];
+=======
+            $MYSQL_HOST='localhost';
+            $MYSQL_USER = 'root' ;
+            $MYSQL_PASSWORD = '12345678';
+            $MYSQL_DB_NAME = 'informaticalw';
+>>>>>>> 78017e529c54c9d0cdb13b6239950932670c7f3b
             $PDO = new PDO('mysql:host=' . $MYSQL_HOST . ';dbname=' . $MYSQL_DB_NAME, $MYSQL_USER, $MYSQL_PASSWORD);
             return $PDO;
         }
