@@ -33,5 +33,23 @@
 
             
         </div>
+        <?php
+            session_start();
+            if (isset($_SESSION['log'])) {
+                if($_SESSION['log']){
+                    echo 
+                    '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("Senha ou email incorretos")</SCRIPT>';
+                    $_SESSION['log']=false;
+
+
+                }               
+            }
+            if (isset($_SESSION['logout'])) {
+                if ($_SESSION['logout']) {
+                    session_destroy();
+                }
+            }
+
+        ?>
     </body>
 </html>

@@ -9,9 +9,9 @@ $senha = $_POST['senha'];
 
 if (empty($senha) || empty($email)) {
     echo "<script> if(!confirm('Informe a senha e Email')){
-        location.href='index.html';
+        location.href='index.php';
     }else{
-        location.href='index.html';
+        location.href='index.php';
     } </script>";
     exit;
 }
@@ -22,9 +22,16 @@ $conexao = $classe->conection();
 
 $usuario = $classe->logar($email,$senha,$conexao);
 
+if (count($usuario)<=0) {
+    $_SESSION['log']=true;
+    header('location: index.php');
+    exit;
+    # code...
+}
+
 echo $usuario['id_cliente'];
 
-
+$_SESSION['logado']=true;
 $_SESSION['senha'] = $senha;
 $_SESSION['email_cliente'] = $email;
 $_SESSION['id_cliente'] = $usuario['id_cliente'];

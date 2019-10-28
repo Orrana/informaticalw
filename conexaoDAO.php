@@ -48,14 +48,7 @@
             $stm->execute();
             $users = $stm->fetchAll(PDO::FETCH_ASSOC);    
             $user = [];
-            if (count($users)<=0) {
-                echo "<script> if(!confirm('Senha ou Email incorreto')){
-                    location.href='index.html';
-                }else{
-                    location.href='index.html';
-                } </script>";
-                exit;
-            }
+            
 
             $user = $users[0];
             return $user;

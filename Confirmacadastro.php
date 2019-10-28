@@ -27,9 +27,9 @@
     if (strcmp($senha,$confir_senha)==0) {
         $cliente->cadastro($nome,$email,$senha,$tel,$endereco,$teste);
         echo "<script> if (!confirm('Cadastrado com sucesso!')) {
-            location.href='index.html';
+            location.href='index.php';
         }else{
-            location.href='index.html';
+            location.href='index.php';
         } </script>";
 
     }else{
